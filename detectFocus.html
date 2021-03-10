@@ -1,0 +1,22 @@
+<html>
+  <head>
+    <style>
+      .red {
+        background-color: red;
+      }
+    </style>
+  </head>
+
+  <body>
+    <script>
+      console.log("hello");
+      document.querySelector("body").addEventListener("mouseleave", () => {
+        document.querySelector("body").classList.add("red");
+        console.log("LEAVE");
+      });
+      document.querySelector("body").addEventListener("mouseenter", () => {
+        document.querySelector("body").classList.remove("red");
+      });
+    </script>
+  </body>
+</html>
